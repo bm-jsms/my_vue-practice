@@ -16,6 +16,10 @@ const myObject = {
 	quantity: 10,
 	price: 1,
 };
+
+const handleClick = () => {
+	alert('You clicked me');
+};
 </script>
 
 <template>
@@ -84,6 +88,11 @@ const myObject = {
 			</li>
 		</template>
 	</ul>
+
+	<hr />
+
+	<!-- <button v-on:click="handleClick">click me</button> -->
+	<button @click="handleClick">click me</button>
 </template>
 
 <style>
