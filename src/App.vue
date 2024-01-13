@@ -15,6 +15,8 @@ const valid = true;
 	<h2>
 		{{ valid ? 'Valid' : 'Not Valid' }}
 	</h2>
+	<p v-if="valid">Is Valid ⭐</p>
+	<p v-else>Is not Valid ❌</p>
 </template>
 
 <style>
