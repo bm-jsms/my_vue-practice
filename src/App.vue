@@ -9,7 +9,7 @@ const styleColor = 'color: green';
 	</h1>
 
 	<!-- <h2 style="color: blue">Example of inline style</h2> -->
-	<h2 v-bind:style="styleColor">Example of inline style</h2>
+	<h2 :style="styleColor">Example of inline style</h2>
 </template>
 
 <style>
