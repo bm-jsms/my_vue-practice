@@ -17,6 +17,8 @@ const valid = true;
 	</h2>
 	<p v-if="valid">Is Valid ⭐</p>
 	<p v-else>Is not Valid ❌</p>
+
+	<h2 v-show="valid">Is Valid ⭐</h2>
 </template>
 
 <style>
