@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue';
+
 const msg = 'Hello Vue 3.0';
 const styleColor = 'color: green';
 const valid = true;
@@ -19,6 +21,12 @@ const myObject = {
 
 const handleClick = () => {
 	alert('You clicked me');
+};
+
+const counter = ref(0);
+
+const increment = () => {
+	counter.value++;
 };
 </script>
 
@@ -93,6 +101,13 @@ const handleClick = () => {
 
 	<!-- <button v-on:click="handleClick">click me</button> -->
 	<button @click="handleClick">click me</button>
+
+	<hr />
+
+	<h2>Reactive in Vue 3</h2>
+	<h3>Counter: {{ counter }}</h3>
+
+	<button @click="increment">Increment</button>
 </template>
 
 <style>
