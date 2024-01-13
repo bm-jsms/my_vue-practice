@@ -26,13 +26,20 @@ const myObject = {
 	<!-- <h2 style="color: blue">Example of inline style</h2> -->
 	<h2 :style="styleColor">Example of inline style</h2>
 
+	<hr />
+
 	<h2>
 		{{ valid ? 'Valid' : 'Not Valid' }}
 	</h2>
+
+	<hr />
+
 	<p v-if="valid">Is Valid ⭐</p>
 	<p v-else>Is not Valid ❌</p>
 
 	<h2 v-show="valid">Is Valid ⭐</h2>
+
+	<hr />
 
 	<h2>My Fruits</h2>
 
@@ -41,6 +48,8 @@ const myObject = {
 			{{ fruit }}
 		</li>
 	</ul>
+
+	<hr />
 
 	<h3>Test</h3>
 	<ul>
@@ -51,6 +60,8 @@ const myObject = {
 		</li>
 	</ul>
 
+	<hr />
+
 	<h2>v-for Object</h2>
 	<ul>
 		<li v-for="value in myObject" :key="value">
@@ -60,6 +71,8 @@ const myObject = {
 	<ul>
 		<li v-for="(value, key) in myObject" :key="key">{{ key }}: {{ value }}</li>
 	</ul>
+
+	<hr />
 
 	<h2>v-if with v-for</h2>
 	<ul>
