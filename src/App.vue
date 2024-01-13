@@ -2,6 +2,8 @@
 const msg = 'Hello Vue 3.0';
 const styleColor = 'color: green';
 const valid = true;
+
+const fruits = ['🍎', '🍌', '🍇'];
 </script>
 
 <template>
@@ -19,6 +21,14 @@ const valid = true;
 	<p v-else>Is not Valid ❌</p>
 
 	<h2 v-show="valid">Is Valid ⭐</h2>
+
+	<h2>My Fruits</h2>
+
+	<ul>
+		<li v-for="(fruit, index) in fruits" :key="index">
+			{{ fruit }}
+		</li>
+	</ul>
 </template>
 
 <style>
