@@ -4,6 +4,12 @@ const styleColor = 'color: green';
 const valid = true;
 
 const fruits = ['🍎', '🍌', '🍇'];
+
+const arrayFruits = [
+	{ name: '🍎', quantity: 10, price: 1 },
+	{ name: '🍌', quantity: 5, price: 2 },
+	{ name: '🍇', quantity: 0, price: 3 },
+];
 </script>
 
 <template>
@@ -27,6 +33,15 @@ const fruits = ['🍎', '🍌', '🍇'];
 	<ul>
 		<li v-for="(fruit, index) in fruits" :key="index">
 			{{ fruit }}
+		</li>
+	</ul>
+
+	<h3>Test</h3>
+	<ul>
+		<li v-for="fruit in arrayFruits" :key="fruit.name">
+			<span> Name: {{ fruit.name }} </span>
+			<span> Quality: {{ fruit.quantity }} </span>
+			<span> Price: {{ fruit.price }} </span>
 		</li>
 	</ul>
 </template>
