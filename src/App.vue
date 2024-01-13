@@ -60,6 +60,17 @@ const myObject = {
 	<ul>
 		<li v-for="(value, key) in myObject" :key="key">{{ key }}: {{ value }}</li>
 	</ul>
+
+	<h2>v-if with v-for</h2>
+	<ul>
+		<template v-for="fruit in arrayFruits">
+			<li v-if="fruit.quantity > 0" :key="fruit.name">
+				<span> Name: {{ fruit.name }} </span>
+				<span> Quality: {{ fruit.quantity }} </span>
+				<span> Price: {{ fruit.price }} </span>
+			</li>
+		</template>
+	</ul>
 </template>
 
 <style>
