@@ -1,4 +1,4 @@
-# 02.5 my_project
+# my vue Project
 
 This template should help get you started developing with Vue 3 in Vite.
 
