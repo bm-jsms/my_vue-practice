@@ -10,6 +10,12 @@ const arrayFruits = [
 	{ name: '🍌', quantity: 5, price: 2 },
 	{ name: '🍇', quantity: 0, price: 3 },
 ];
+
+const myObject = {
+	name: '🍎',
+	quantity: 10,
+	price: 1,
+};
 </script>
 
 <template>
@@ -43,6 +49,16 @@ const arrayFruits = [
 			<span> Quality: {{ fruit.quantity }} </span>
 			<span> Price: {{ fruit.price }} </span>
 		</li>
+	</ul>
+
+	<h2>v-for Object</h2>
+	<ul>
+		<li v-for="value in myObject" :key="value">
+			{{ value }}
+		</li>
+	</ul>
+	<ul>
+		<li v-for="(value, key) in myObject" :key="key">{{ key }}: {{ value }}</li>
 	</ul>
 </template>
 
